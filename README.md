@@ -10,6 +10,12 @@ NIRUX ships only its default **Noir** wallpaper. This repository holds the
 wallpapers for the nine other built-in themes and two colour-variant packs for
 Carl Larsson and Erik Satie (red, blue, green and noir).
 
+It also holds **NIRUX Signature**: the Noir photograph (photo by Nicklas
+Rudolfsson, 2025) toned in each built-in theme's own colours, one 4K picture
+per theme. With `theme_style = "signature"` in NIRUWM every theme shows its
+Signature picture instead of its own artwork; switch back and forth with
+`niructl wallpaper style toggle` or from the theme and wallpaper pickers.
+
 The images are not committed to the Git history. They are published as
 [GitHub release assets](https://github.com/nirucon/nirux-wallpapers/releases),
 so cloning this repository is small and NIRUX downloads only what you ask for.
@@ -35,6 +41,18 @@ archive holds four colour variants, 4K and 8K (eight files).
 | `nirux-wallpaper-winter-nights.tar.xz` | Winter Nights, 4K + 8K |
 | `nirux-wallpaper-carl-larsson-extras.tar.xz` | Carl Larsson red, blue, green, noir |
 | `nirux-wallpaper-satie-extras.tar.xz` | Erik Satie red, blue, green, noir |
+
+Release `v1.1.0` adds one asset and keeps every `v1.0.0` asset where it is:
+
+| Asset | Contents |
+|---|---|
+| `nirux-wallpaper-signature.tar.xz` | NIRUX Signature, ten themes, 4K each (about 47 MiB) |
+
+The Signature pictures are made with `tools/make-signature.py` from the 8K Noir
+source and NIRUWM's theme palettes: the darker of background and foreground
+takes the shadows, the theme accent carries the midtones and the lighter one
+the highlights, so light themes stay the right way round and the title stays
+readable. A new theme palette only needs the script run again.
 
 `SHA256SUMS` is attached to the release and also committed here. The nine theme
 archives are about 284 MiB together; the two extras packs about 254 MiB.
