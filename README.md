@@ -54,8 +54,15 @@ takes the shadows, the theme accent carries the midtones and the lighter one
 the highlights, so light themes stay the right way round and the title stays
 readable. A new theme palette only needs the script run again.
 
+Release `v1.2.0` (2026-11-11) replaces seven theme archives with a new style
+in the same colours: Nord, Forest Vigil, Blood of Urðr, Root and Stone, Blue
+Horizon, The Norns and Winter Nights. Satie, Carl Larsson, the extras and the
+Signature pack stay in their earlier releases. NIRUX 0.12.261 and later download
+the new pictures on `nirux update` for every theme you already have, and keep a
+picture you changed yourself.
+
 `SHA256SUMS` is attached to the release and also committed here. The nine theme
-archives are about 284 MiB together; the two extras packs about 254 MiB.
+archives are about 375 MiB together; the two extras packs about 254 MiB.
 
 The separate [`nirux-theme-*`](https://github.com/nirucon?tab=repositories&q=nirux-theme)
 theme packs carry their own wallpaper and do not use this repository.
